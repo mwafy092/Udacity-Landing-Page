@@ -17,9 +17,12 @@
             dogbnb
         </div>
         <!-- navigation items -->
-        <ul>
+        <ul class="navbar-list" id="navbar-list">
 
         </ul>
+        <button class="nav-toggle" id="nav-toggle">
+            <img src="/images/toggle.svg" alt="toggle icon" class="toggle-icon">
+        </button>
     </nav>
 
     <div class="container">
@@ -37,7 +40,7 @@
         <main>
 
             <!-- dog bnb information -->
-            <section class="reviews">
+            <section class="reviews" id="reviews" data-nav="Reviews">
                 <h2>What dogs say about us!</h2>
                 <div class="quotes">
                     <blockquote>
@@ -59,7 +62,7 @@
             </section>
 
             <!-- about section -->
-            <section class="about" id="about">
+            <section class="about" id="about" data-nav="About">
                 <div class="about-text">
                     <h2>About</h2>
                     <p>
@@ -76,7 +79,7 @@
             </section>
 
             <!-- photo shots section -->
-            <section class="shots" id="photoSession">
+            <section class="shots" id="photos" data-nav="Photo Session">
                 <div class="shots-text">
                     <h2>Our photo sessions</h2>
                     <p>
@@ -95,7 +98,7 @@
             </section>
 
             <!-- pool section -->
-            <section class="pool" id="swimming">
+            <section class="pool" id="swimming" data-nav="swimming">
                 <div class="pool-text">
                     <h2>Very nice pool</h2>
                     <p>
@@ -109,7 +112,7 @@
                 </div>
             </section>
             <!-- booking section -->
-            <section class="booking" id="booking">
+            <section class="booking" id="booking" data-nav="booking">
                 <div class="booking-text">
                     <h2>Book now!</h2>
                     <p>
