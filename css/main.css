@@ -170,7 +170,7 @@ cite {
 
 .shots-button {
     padding: 1rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
     border-radius: 5rem;
@@ -245,7 +245,7 @@ cite {
 
 .booking-button {
     padding: 1rem 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: #fff;
     border-radius: 5rem;
@@ -281,7 +281,9 @@ footer {
 
 
 @media(min-width: 1000px) {
-
+    body {
+        font-size: 16px;
+    }
     main {
         width: 80%;
         margin: auto;
