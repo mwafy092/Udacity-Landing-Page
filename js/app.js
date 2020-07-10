@@ -8,6 +8,11 @@ toggle.addEventListener('click', () => {
     navList.classList.toggle('mobile-nav');
 });
 
+// navbar resize event
+window.addEventListener('resize', () => {
+    navList.classList.remove('mobile-nav');
+})
+
 // navigation bar builder function
 const navBuilder = () => {
     let navItems = "";      // create empty variable for all nav items
@@ -27,5 +32,15 @@ const navBuilder = () => {
 
 navBuilder();   // calling navbar builder
 
-
-
+// distinguish the section in view
+function scrollActive() {
+    sections.forEach(section => {
+        let cord = Math.floor(section.getBoundingClientRect().top);
+        if (cord >= -150 && cord < 150) {
+            section.classList.add('active')
+        } else {
+            section.classList.remove('active')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive);
