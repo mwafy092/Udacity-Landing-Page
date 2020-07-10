@@ -1,0 +1,110 @@
+/* Main nav bar */
+nav {
+    background-color: #fffff8;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+nav .logo a{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #f2565e;
+    padding: 0.5rem;
+    border-right: 1px solid #DCE0E0;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* mobile nav menu toggler */
+.nav-toggle {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+.nav-toggle img {
+    width: 25px;
+}
+
+/* Navigation menu for mobile */
+.navbar-list {
+    display: none;
+}
+.mobile-nav{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 2.7rem;
+    list-style: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.mobile-nav a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 3rem;
+}
+
+.mobile-nav li {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.mobile-nav li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+}
+
+
+/* desktop navbar version */
+@media(min-width: 1000px) {
+    .nav-toggle {
+        display: none;
+    }
+    
+    .navbar-list {
+        display: flex;
+    }
+    .navbar-list li {
+        list-style: none;
+        margin: 0 1.5rem;
+    }
+    
+    .navbar-list li a {
+        text-decoration: none;
+        color: #666A6C;
+        font-weight: 700;
+    }
+
+
+}
+
+
+/* active state navigation  */
+.active {
+    animation: fader 3s forwards;
+}
+
+@keyframes fader {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

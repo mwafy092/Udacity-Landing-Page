@@ -1,6 +1,12 @@
 // App Global variables for nav container and sections
 const navList = document.querySelector('#navbar-list');
 const sections = document.querySelectorAll('section');
+const toggle = document.querySelector('#nav-toggle');
+
+// navbar toggle icon
+toggle.addEventListener('click', () => {
+    navList.classList.toggle('mobile-nav');
+});
 
 // navigation bar builder function
 const navBuilder = () => {
@@ -21,8 +27,5 @@ const navBuilder = () => {
 
 navBuilder();   // calling navbar builder
 
-// navbar toggle icon
-let toggle = document.querySelector('#nav-toggle');
-toggle.addEventListener('click', () => {
-    navList.classList.toggle('show-mobile')
-});
+
+
