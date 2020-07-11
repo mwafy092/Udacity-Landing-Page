@@ -1,4 +1,6 @@
 /* Main nav bar */
+
+
 nav {
     background-color: #fffff8;
     position: fixed;
@@ -114,7 +116,7 @@ nav .logo a{
 @keyframes fader {
     0% {
         opacity: 0;
-        transform: translateX(-10rem);
+        transform: translateX(-8rem);
     }
 
     100% {

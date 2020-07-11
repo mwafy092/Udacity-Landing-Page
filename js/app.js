@@ -3,17 +3,27 @@ const navList = document.querySelector('#navbar-list');
 const sections = document.querySelectorAll('section');
 const toggle = document.querySelector('#nav-toggle');
 
-// navbar toggle icon
+/*
+    navbar toggler on mobile
+*/
+
+
 toggle.addEventListener('click', () => {
+
     navList.classList.toggle('mobile-nav');
 });
 
-// navbar resize event
+
 window.addEventListener('resize', () => {
+    // navbar resize event
     navList.classList.remove('mobile-nav');
 })
 
-// navigation bar builder function
+
+/*
+    navigation bar builder function
+*/
+
 const navBuilder = () => {
     let navItems = "";      // create empty variable for all nav items
 
@@ -32,7 +42,11 @@ const navBuilder = () => {
 
 navBuilder();   // calling navbar builder
 
-// distinguish the section in view
+
+/* 
+    distinguish the section in view
+ */
+
 function scrollActive() {
     sections.forEach(section => {
         let cord = Math.floor(section.getBoundingClientRect().top);
