@@ -2,7 +2,6 @@
 const navList = document.querySelector('#navbar-list');
 const sections = document.querySelectorAll('section');
 const toggle = document.querySelector('#nav-toggle');
-
 /*
     navbar toggler on mobile
 */
@@ -58,3 +57,4 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive);
+
