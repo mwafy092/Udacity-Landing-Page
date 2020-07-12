@@ -124,3 +124,10 @@ nav .logo a{
         transform: translateX(0);
     }
 }
+
+/* nav items active state */
+.active-link {
+    border-bottom: 3px solid #1E90FF;
+    padding: 0.5rem;
+    font-family: 'Merienda One', cursive;
+}
