@@ -1,5 +1,7 @@
 /* Main nav bar */
-
+html {
+    scroll-behavior: smooth;
+}
 
 nav {
     background-color: #fffff8;
